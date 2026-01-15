@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Link to the external CSS file for styling -->
+        <link rel="stylesheet" href="style.css">
+        <!-- internal CSS -->
+        <style></style>
+        <!-- Link to the external JavaScript file & space for internal Js-->
+        <script src="Home.js"></script>
+    </head>
+    <body id="mode">
+        <!-- Navigation bar section -->
+        <div class="navbar">
+            <ul>
+                <!-- Navigation links for different pages -->
+                <li><a href="home.html">Home</a></li>
+                <li><a href="">Boat Biographies</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="gallary.html">Gallary</a></li>
+                <li><a href="">Contact</a></li>
+                <div class="universal">
+                <li>
+                    <!--Button or toggle light mode-->
+                    <img type="button" class="toggleDarkmode" title="Toggle Mode" onclick="toggleDarkmode()" src="images/contrast_86dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="Theme">
+                </li>
+                <!--Js for translation element-->
+                <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                        <!-- Font selection dropdown -->
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropbtn" onclick="toggleDropdown()">
+                                    <!-- Font selection icon -->
+                                    <img class="font-selection" title="Select Font" src="images/brand_family_86dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="Font's">
+                                </div>
+                                <div class="dropdown-content" id="fontDropdown">
+                                    <!-- Links to change font style -->
+                                    <a style="font-family: OpenDyslexic !important;" href="#" onclick="changeFont('OpenDyslexic')">OpenDyslexic</a>
+                                    <a style="font-family: monospace !important;" href="#" onclick="changeFont('monospace')">Monospace</a>
+                                    <a style="font-family: Verdana !important;" href="#" onclick="changeFont('Verdana')">Verdana</a>
+                                    <a style="font-family: Arial !important;" href="#" onclick="changeFont('Arial')">Arial</a>
+                                    <a style="font-family: Georgia !important;" href="#" onclick="changeFont('Georgia')">Georgia</a>
+                                    <a style="font-family: Tahoma !important;" href="#" onclick="changeFont('Tahoma')">Tahoma</a>
+                                    <a style="font-family: Impact !important;" href="#" onclick="changeFont('Impact')">Impact</a>
+                                    <a style="font-family: cursive !important;" href="#" onclick="changeFont('Cursive')">Cursive</a>
+                                    <a style="font-family: Helvetica !important;" href="#" onclick="changeFont('Helvetica')">Helvetica</a>
+                                </div>
+                            </div>
+                            <script>
+                            
+                            </script>
+                        </li>
+                    </div>
+                </ul>
+        </div>
+        <div style="padding-top: 10px;"  id=h1>
+ <div style='border:none;padding:1.0pt'>
+ <b style="text-align: center; border: none; border-bottom: solid;">
+    <span style='font-size:30.0pt;font-family: Pristina;color:hsl(209, 65%, 49%);'>Sailing Guide</span></b>
+    <p style="margin-top: -3px;">Created By Drew Godschalx</p>
+ </div>
+</div>
+
+<div class="text">
+    <h1>Introduction</h1>
+    <h3>Disclaimer!</h3>
+<p>All information on this site is subject to being incorect.</p>
+<p style="padding-top: 50px;">It can often be difficult to find the information you need on any one topic, especially in the vast and sometimes confusing world of sailing. I’ve brought all of this information together to make it easier for new, advanced, and expert sailors to find what they’re looking for. I’ve also included a page of useful resources, such as tutorials, lessons from professionals, and websites offering great deals on sailing and boating gear. The contact page is available for anyone who would like to add information to the site, challenge or correct anything here, leave comments, add to the gallary, or get in touch for any other reason. </p>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go To Top</button>
+</div>
+
+
+    </body>
+</html>

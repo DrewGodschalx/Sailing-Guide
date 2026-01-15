@@ -1,0 +1,312 @@
+:root{
+ --backgroundcolor:hsl(0, 0%, 100%);
+ --navbar:hsl(160, 90%, 88%);
+ --navbarhover:hsla(240, 4%, 74%, 0.493);
+ --buttonshover:hsl(0, 0%, 71%);
+ --mybtn:hsl(209, 65%, 49%);
+ --mybtnhover:hsl(183, 74%, 90%);
+ --textcolor:hsl(0, 0%, 0%);
+ --borderbottom:hsl(21, 81%, 27%);
+ --polaroid:hsla(0, 0%, 0%, 0.849);
+ --rtextcolor:hsl(0, 0%, 100%);
+}
+
+.darkmode{
+  --backgroundcolor:hsla(0, 0%, 0%, 0.795);
+  --navbar:hsl(42, 17%, 32%);
+  --navbarhover:hsla(240, 4%, 74%, 0.493);
+  --buttonshover:hsl(0, 0%, 71%);
+  --mybtn:hsl(209, 86%, 78%);
+  --mybtnhover:hsl(183, 83%, 56%);
+  --textcolor:hsl(0, 0%, 100%);
+  --borderbottom:hsl(69, 60%, 48%);
+  --polaroid:hsla(0, 6%, 90%, 0.726);
+  --rtextcolor:hsl(0, 0%, 0%);
+}
+
+/* Reset default margins and paddings */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body: background color and dyslexic-friendly font */
+body {
+  background-color: var(--backgroundcolor);
+  font-family: 'OpenDyslexic', sans-serif;
+  color: var(--textcolor);
+}
+
+/* h1: large heading font size */
+h1 {
+  font-size: 37px;
+}
+
+/* p: paragraph font size */
+p {
+  font-size: 20px;
+}
+
+.heading {
+  font-size: 37px;
+  text-decoration: underline;
+}
+
+/* Google Translate element in navbar */
+.navbar #google_translate_element {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -10px;
+  margin-top: 17px;
+  white-space: nowrap;
+}
+
+/* Navbar: full width, flush to top */
+.navbar {
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  z-index: 100;
+}
+
+/* Navbar unordered list: horizontal layout and style */
+.navbar ul{
+  list-style-type: none;
+  background-color: var(--navbar);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  height: 64px;
+  font-size: 26px;
+  width: 100%;
+}
+
+/* Navbar links: color, padding, alignment */
+.navbar a {
+  color: var(--textcolor);
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+/* Navbar link hover: background color */
+.navbar a:hover {
+  background-color: var(--navbarhover);
+}
+
+/* Navbar list items: horizontal alignment */
+.navbar li {
+  float: left;
+}
+
+/* List item links: set height */
+li a {
+  height: 50px;
+}
+
+/* Universal class: float list items right */
+.universal li {
+  float: right;
+}
+
+/* Dropdown menu: absolute positioning */
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+  padding: 0;
+}
+
+/* Dropdown content: hidden by default, styled box */
+.dropdown-content {
+  display: none;
+  position: relative;
+  margin-left: -200px;
+  margin-top: 25px;
+  background-color:var(--backgroundcolor);
+  min-width: 10px;
+  width: 220px;
+  box-shadow: 0px 8px 16px 0px hsla(0, 0%, 0%, 0.2);
+  z-index: 1000;
+  max-height: 200px;
+  overflow: scroll;
+}
+
+/* Dropdown content links: block layout and color */
+.dropdown-content a {
+  color: var(--textcolor);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Dropdown content link hover: background color */
+.dropdown-content a:hover {
+  background-color: var(--buttonshover);
+}
+
+/* Dark mode toggle button styling */
+.toggleDarkmode {
+  background-color: var(--navbar);
+  width: auto;
+  position: relative;
+  margin-left: -110px;
+  margin-bottom: -30px;
+  border-radius: 5px;
+  box-shadow: 3px 4px 10px 5px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.toggleDarkmode:hover {
+  background-color: var(--buttonshover);
+}
+
+/* Font selection dropdown styling */
+.font-selection {
+  background-color: var(--navbar);
+  width: auto;
+  position: relative;
+  margin-left: -55px;
+  margin-bottom: -30px;
+  border-radius: 5px;
+  box-shadow: 3px 4px 10px 5px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.font-selection:hover {
+  background-color: var(--buttonshover);
+}
+
+/* Flexbox layout for text and image alignment */
+.text-with-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Image styling inside text-with-image */
+.text-with-image img {
+  width: 375px;
+  height: auto;
+  margin-left: 30px;
+  padding-left: 200px;
+  padding-bottom: 250px;
+  padding-top: 50px;
+}
+
+/* Zoom effect for images on hover */
+.zoom {
+  padding: 0px;
+  background: none;
+  transition: transform 0.2s;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 3px 4px 10px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.zoom:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(2.4);
+}
+
+/* Information box styling */
+div.information {
+  padding: 50px;
+  width: 430px;
+}
+
+/* Polaroid-style box styling */
+div.polaroid {
+  width: 230px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-radius: 3px;
+}
+.polaroid {
+  background-color: var(--polaroid);
+  color: var(--rtextcolor);
+}
+
+/* Image styling for #image */
+#image {
+  width: 450px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin: 20px 0;
+}
+.text {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--mybtn);
+  color: var(--backgroundcolor);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: var(--mybtnhover);
+}
+
+.download {
+  margin-bottom: -8px;
+  background-color: var(--backgroundcolor);
+  fill: var(--textcolor);
+}
+.visit {
+  margin-bottom: -8px;
+  background-color: var(--backgroundcolor);
+  fill: var(--textcolor);
+}
+.download:hover {
+  background-color:var(--buttonshover);
+}
+.word-docx {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.link-image {
+  width: auto;
+  height: 160px;
+}
+
+.text-bottom {
+  border:none;
+  border-bottom:solid var(--borderbottom) 3.0pt; 
+  padding:0 0 10.0pt 0;
+  width: 300px;
+}
+.rescourcelink {
+  text-decoration: none;
+  color: var(--textcolor);
+  font-size: 20px;
+  padding-top: 10px;
+}
+.page {
+  background-color: var(--backgroundcolor);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.gen {
+color: hsl(209, 65%, 49%);
+text-align: center;
+}
+.children li {
+  padding-bottom: 15px;
+  font-size: 23px;
+}
