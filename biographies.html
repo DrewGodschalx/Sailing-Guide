@@ -70,11 +70,62 @@
 </div>
 
 <div class="text">
-    
+    <h2>Search Items</h2>
+<div class="search-container">
+  <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+  <input type="text" id="searchInput" placeholder="Search for items..." onkeyup="filterItems()" onfocus="showResults()">
+</div>
+
+<div class="results-grid" id="resultsGrid">
+  <div class="result-item" onclick="openBoat(event, 'NS14')">
+    <h4>NS14</h4>
+    <img src="https://imgs.yachthub.com/3/2/8/3/6/7/0_4.jpg" alt="NS14">
+  </div>
+  <div class="result-item" onclick="openBoat(event, 'MG14')">
+    <h4>MG14</h4>
+    <img src="https://static.wixstatic.com/media/0ff8c6_a4c00201f49549c09812d438bcc6b6ff~mv2.jpg/v1/fill/w_480,h_270,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/0ff8c6_a4c00201f49549c09812d438bcc6b6ff~mv2.jpg" alt="MG14">
+  </div>
+  <div class="result-item" onclick="openBoat(event, 'RS Quest')">
+    <h4>RS Quest</h4>
+    <img src="https://images.squarespace-cdn.com/content/v1/62207344582c7d0bad231380/631d59c7-16ad-4bcd-99f6-44fe94b139e0/Quest-diagram-Rot-627x812.jpg" alt="RS Quest">
+  </div>
+  <div class="result-item" onclick="openBoat(event, 'Laser')">
+    <h4>Laser</h4>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI2f92wiLkxIKiSmz0y4vT9Ph7iF0FMSDwV0oc3dJXvngKlZHOMat1Om6D5tF87twgckNAvCpYdWC1P1-27PvFviOeVc2OITcvGtylvQ&s=10" alt="Laser">
+  </div>
+</div>
 
 
 
+<div id="NS14" class="tabcontent">
+  <h3>NS14</h3>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae aliquid iusto nemo, doloribus aspernatur tempora quos aut dolore culpa iure architecto ipsum eos deserunt, error excepturi atque veritatis a quam!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quis nesciunt dicta! Molestias corporis consectetur praesentium architecto, vero temporibus. Commodi quisquam molestiae autem nemo deleniti fuga, quibusdam unde sed doloribus?
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi perferendis voluptates consequuntur autem veniam deserunt soluta eius, nemo hic, cupiditate velit earum ad. Labore dolore quos magnam tempora similique odio?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero quasi vel eos! Iure modi suscipit velit, laborum doloremque nulla architecto. Enim, quas tenetur! Repellat nostrum minus alias optio beatae?
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam a dicta consequuntur consectetur illo illum nesciunt quos repellat facilis ea maxime quam recusandae error, iste quibusdam sapiente, quas vel asperiores.
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla commodi iste fugit accusantium eveniet minus atque placeat officiis veniam, sit, laboriosam amet esse? Nobis maiores saepe asperiores, minus magni repellat!
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus minima quas maxime veniam? Nesciunt quis obcaecati excepturi exercitationem pariatur, assumenda, corporis sed deleniti similique magni alias delectus quaerat eveniet distinctio.
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati quis doloribus odio deserunt ea est suscipit nisi optio tenetur quas eum repellendus consequuntur, dolore distinctio! Magnam deleniti quod delectus aliquid?
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque odio non temporibus eaque molestias iusto harum sapiente perferendis saepe, eveniet recusandae, beatae consectetur eligendi. Velit ducimus facere vero est.
 
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="MG14" class="tabcontent">
+  <h3>MG14</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="RS Quest" class="tabcontent">
+  <h3>RS Quest</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Laser" class="tabcontent">
+  <h3>Laser</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid atque fugit, possimus expedita, officiis suscipit reiciendis sint nesciunt minima, qui iusto! Nostrum dignissimos blanditiis autem! Perferendis labore eaque nobis error.</p>
+</div>
 
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Go To Top</button>
