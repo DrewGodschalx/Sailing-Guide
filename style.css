@@ -311,8 +311,9 @@ text-align: center;
 }
 /* boat biographies search and tabs */
 .center {
- align-items: center; 
+  align-items: center; 
   text-align: center;
+  padding: 20px;
 }
 /* Search bar styling */
 .search-container {
