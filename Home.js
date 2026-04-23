@@ -76,7 +76,8 @@ const items = [
   { id: 'NS14', title: 'NS14', image: 'https://imgs.yachthub.com/3/2/8/3/6/7/0_4.jpg' },
   { id: 'MG14', title: 'MG14', image: 'https://static.wixstatic.com/media/0ff8c6_a4c00201f49549c09812d438bcc6b6ff~mv2.jpg/v1/fill/w_480,h_270,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/0ff8c6_a4c00201f49549c09812d438bcc6b6ff~mv2.jpg' },
   { id: 'RS Quest', title: 'RS Quest', image: 'https://images.squarespace-cdn.com/content/v1/62207344582c7d0bad231380/631d59c7-16ad-4bcd-99f6-44fe94b139e0/Quest-diagram-Rot-627x812.jpg' },
-  { id: 'Laser', title: 'Laser', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI2f92wiLkxIKiSmz0y4vT9Ph7iF0FMSDwV0oc3dJXvngKlZHOMat1Om6D5tF87twgckNAvCpYdWC1P1-27PvFviOeVc2OITcvGtylvQ&s=10' }
+  { id: 'Laser', title: 'Laser', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI2f92wiLkxIKiSmz0y4vT9Ph7iF0FMSDwV0oc3dJXvngKlZHOMat1Om6D5tF87twgckNAvCpYdWC1P1-27PvFviOeVc2OITcvGtylvQ&s=10' },
+  { id: 'Tweakers', title: 'Tweakers/barbour Haulers', image: 'https://www.practical-sailor.com/wp-content/uploads/2019/09/p1di5li1t41gj416q54vh1ije3fbb.jpg.optimal.jpg' }
 ];
 
 function filterItems() {
